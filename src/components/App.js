@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import NavMenu from '../components/NavComponent/NavMenu';
 
 export default class App extends Component {
     render() {
         return (
-            <div>
-                <h1>My portfolio created in React!</h1>
-            </div>
+                <NavMenu/>
         )
     }
 }
