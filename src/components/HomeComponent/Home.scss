@@ -22,7 +22,26 @@
     }
 
     .logo-mouse {
+        width: 100%;
         margin-top: 100px;
-        padding-left: 40px;
+        text-align: center;
+
+        img {
+            -webkit-animation: moving 1.8s infinite ease-in-out;
+        }
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
     }
 }
