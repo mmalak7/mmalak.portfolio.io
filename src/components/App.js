@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavMenu from '../components/NavComponent/NavMenu';
 import Home from '../components/HomeComponent/Home';
+import Work from '../components/WorksComponent/Work';
 
 export default class App extends Component {
     render() {
@@ -8,6 +9,7 @@ export default class App extends Component {
             <div className='dev-landing-page'>
                 <NavMenu />
                 <Home />
+                <Work />
             </div>
         )
     }
