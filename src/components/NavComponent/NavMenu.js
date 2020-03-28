@@ -6,7 +6,7 @@ export default function NavMenu() {
     return (
         <div className='header'>
             <div className='logo-mobile'>
-                <img id='chess' src={chess}/>
+                <img id='chess' src={chess} />
             </div>
             <div className='topic'>
                 <h1>Designed</h1>

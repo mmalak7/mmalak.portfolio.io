@@ -1,0 +1,44 @@
+.works {
+    // width: 100vw;
+    // padding-left: 15px;
+
+    .main-label-name {
+        font-size: 20vw;
+        line-height: 17vw;
+        font-family: 'Raleway', sans-serif;
+        color: #2E2E2E;
+    }
+
+    .project-container {
+        display: flex;
+        // width: 100%;
+        height: 25vh;
+        max-height: 30vh;
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+        padding-left: 1vh;
+        justify-content: space-between;
+
+        .label-heading {
+            font-family: 'Raleway', sans-serif;
+            color: #2E2E2E;
+            font-size: 7vw;
+        }
+
+        .label-data {
+            display: block;
+            margin-top: 6vh;
+            font-family: 'Raleway', sans-serif;
+            color: #2E2E2E;
+            font-size: 4vw;
+        }
+
+
+        img {
+            width: 50%;
+            max-height: 20vh;
+            filter: grayscale(100%);
+            padding-right: 1vh;
+        }
+    }
+}

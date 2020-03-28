@@ -3,6 +3,10 @@ import NavMenu from '../components/NavComponent/NavMenu';
 import Home from '../components/HomeComponent/Home';
 import Work from '../components/WorksComponent/Work';
 
+/*
+TODO: divide dev-landing-page for 3 parts 
+*/
+
 export default class App extends Component {
     render() {
         return (
