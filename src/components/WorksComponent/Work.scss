@@ -1,44 +1,69 @@
 .works {
-    // width: 100vw;
-    // padding-left: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    -webkit-box-align: center;
 
     .main-label-name {
-        font-size: 20vw;
-        line-height: 17vw;
+        font-size: 8vw;
+        line-height: 15vw;
         font-family: 'Raleway', sans-serif;
         color: #2E2E2E;
+        margin-left: 10vw;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
     }
 
     .project-container {
-        display: flex;
-        // width: 100%;
-        height: 25vh;
-        max-height: 30vh;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
         margin-top: 6vh;
         margin-bottom: 6vh;
-        padding-left: 1vh;
-        justify-content: space-between;
+        text-align: center;
 
-        .label-heading {
-            font-family: 'Raleway', sans-serif;
-            color: #2E2E2E;
-            font-size: 7vw;
-        }
-
-        .label-data {
+        .label {
+            margin-top: 1.5vh;
+            position: relative;
             display: block;
-            margin-top: 6vh;
             font-family: 'Raleway', sans-serif;
             color: #2E2E2E;
-            font-size: 4vw;
-        }
+            
 
+            .label-data {
+                font-size: 4vw;
+            }
+
+            .label-heading {
+                display: block;
+                position: relative;
+                padding-top: 1vh;
+                font-size: 10vw;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    // bottom: 0;
+                    width: 1px;
+                    background-color: #D1D1D1;
+                    top: calc(100% + 22px);
+                    right: 50%;
+                    height: 46px;
+                }
+            }
+        }
 
         img {
-            width: 50%;
+            margin: auto;
+            width: 80vw;
             max-height: 20vh;
             filter: grayscale(100%);
-            padding-right: 1vh;
         }
     }
 }
