@@ -11,7 +11,9 @@
         line-height: 15vw;
         font-family: 'Raleway', sans-serif;
         color: #2E2E2E;
-        margin-left: 10vw;
+        // margin-left: 10vw;
+        padding-left: 5vh;
+        margin-top: 6vh;
 
         h1 {
             padding: 0;
@@ -52,7 +54,7 @@
                     // bottom: 0;
                     width: 1px;
                     background-color: #D1D1D1;
-                    top: calc(100% + 22px);
+                    top: calc(100% + 20px);
                     right: 50%;
                     height: 46px;
                 }

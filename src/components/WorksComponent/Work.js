@@ -23,7 +23,7 @@ export default function Work() {
                     </span>
                 </a>
             </div>
-            <div className='project-container'> 
+           <div className='project-container'> 
             <img id='name-of-project' src={project2}></img>
                 <a className='label'>
                     <span className='label-data'>
@@ -33,7 +33,7 @@ export default function Work() {
                         <span>project name</span>
                     </span>
                 </a>
-            </div>
+            </div> 
             <div className='project-container'> 
             <img id='name-of-project' src={project3}></img>
                 <a className='label'>
