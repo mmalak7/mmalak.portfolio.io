@@ -1,1 +1,35 @@
-$text-color: #4b4c53
+$text-color: #4b4c53;
+$higlight-text-color: #DA8950;
+$standard-text-color: #2E2E2E;
+
+.about {
+    margin-top: 3em;
+    width: 100vw;
+    height: auto;
+
+    .bio-element-wrapper {
+        width: 80vw;
+        margin: auto;
+        font-family: 'Raleway', sans-serif;
+        color: #2E2E2E;
+        margin-bottom: 0.3em;
+        line-height: 1.7;
+
+        .bio-element-description {
+            margin-bottom: 1em;
+
+            a {
+                text-decoration: none;
+                color: $higlight-text-color;
+            }
+        }
+
+        h1 {
+            font-size: 6.5vh;
+        }
+
+        h2 {
+            font-size: 3.5vh;
+        }
+    }
+}

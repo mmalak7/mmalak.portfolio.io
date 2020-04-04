@@ -3,9 +3,10 @@ import NavMenu from '../components/NavComponent/NavMenu';
 import Home from '../components/HomeComponent/Home';
 import Work from '../components/WorksComponent/Work';
 import About from '../components/AboutComponent/About';
+import Contact from '../components/ContactComponent/Contact';
 
 /*
-TODO: divide dev-landing-page for 3 parts 
+TODO: refactor scss variables and classes ;)
 */
 
 export default class App extends Component {
@@ -16,6 +17,7 @@ export default class App extends Component {
                 <Home />
                 <Work />
                 <About />
+                <Contact />
             </div>
         )
     }
