@@ -6,24 +6,28 @@
     top: 0;
     left: 0;
     justify-content: space-between;
-    height: 30vh;
-    min-height: 30vh;
+    overflow: hidden;
 
     .logo-mobile {
-        transform: translate(50px, 50px);
+        padding-left: 50px;
+        padding-top: 50px;
+        -webkit-animation: fade-in-img 0.9s ease-in-out;
     }
 
     .topic {
-        transform: translate(-50px, 50px);
+        padding-right: 50px;
+        height: 100%;
+        padding-top: 50px;
         text-align: right;
         letter-spacing: normal;
+        overflow: hidden;
 
         h1 {
             margin: 0;
             color: #2E2E2E;
             font-size: 6.25vw;
             font-family: 'Raleway', sans-serif;
-
+            -webkit-animation: fade-in-txt 1.1s ease-in-out;
         }
 
         h3 {
@@ -31,11 +35,32 @@
             margin: 0;
             font-size: 15px;
             color: #707070;
+            -webkit-animation: fade-in-txt 1.2s ease-in-out;
         }
     }
 
     img {
         width: 60px;
         height: 102px;
+    }
+}
+
+@keyframes fade-in-img {
+    0% {
+        transform: translate3d(0px, 100%, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0%, 0px);
+    }
+}
+
+@keyframes fade-in-txt {
+    0% {
+        transform: translate3d(0px, 200%, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0%, 0px);
     }
 }
