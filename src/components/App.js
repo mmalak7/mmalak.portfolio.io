@@ -10,6 +10,7 @@ TODO: refactor scss variables and classes ;)
 */
 
 export default class App extends Component {
+
     render() {
         return (
             <div className='dev-landing-page'>

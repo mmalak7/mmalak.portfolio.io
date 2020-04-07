@@ -21,6 +21,7 @@
     "file-loader": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-intersection-observer": "^8.26.1",
     "url-loader": "^4.0.0"
   },
   "devDependencies": {

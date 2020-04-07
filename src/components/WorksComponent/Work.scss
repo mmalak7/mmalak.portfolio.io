@@ -11,24 +11,77 @@
         line-height: 15vw;
         font-family: 'Raleway', sans-serif;
         color: #2E2E2E;
-        // margin-left: 10vw;
         padding-left: 5vh;
-        margin-top: 6vh;
+        padding-top: 6vh;
+        overflow: hidden;
 
         h1 {
-            padding: 0;
-            margin: 0;
+            overflow: hidden;
         }
+
+        .a1 {
+            opacity: 0;
+        }
+
+        .a2 {
+            opacity: 0;
+        }
+
+        .a-1-h1 {
+            display: block;
+            opacity: 1;
+            -webkit-animation: fade-in-txt 1s ease-in-out;
+        }
+
+        .a-2-h1 {
+            display: block;
+            opacity: 1;
+            -webkit-animation: fade-in-txt 1.05s ease-in-out;
+        }
+
     }
 
     .project-container {
         position: relative;
-        display: block;
         width: 100%;
-        height: auto;
-        margin-top: 6vh;
-        margin-bottom: 6vh;
+        height: 33vh;
+        margin: 6vh 0;
         text-align: center;
+        overflow: hidden;
+
+        .img-wrap {
+            position: absolute;
+            width: 80vw;
+            height: 20vh;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            .img-cover {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: white;
+            }
+
+            .w-1-img-cover{
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                animation: fade-out-cover 1.2s ease-in-out forwards;
+            }
+
+            img {
+                position: absolute;
+                display: block;
+                // margin: 0 auto;
+                width: 80vw;
+                max-height: 20vh;
+                filter: grayscale(100%);
+            }
+        }
 
         .label {
             margin-top: 1.5vh;
@@ -36,7 +89,7 @@
             display: block;
             font-family: 'Raleway', sans-serif;
             color: #2E2E2E;
-            
+
 
             .label-data {
                 font-size: 4vw;
@@ -48,7 +101,7 @@
                 padding-top: 1vh;
                 font-size: 8vw;
 
-                &:before{
+                &:before {
                     content: '';
                     position: absolute;
                     // bottom: 0;
@@ -61,11 +114,38 @@
             }
         }
 
-        img {
-            margin: auto;
-            width: 80vw;
-            max-height: 20vh;
-            filter: grayscale(100%);
-        }
+
+    }
+}
+
+@keyframes fade-in-img {
+    0% {
+        transform: translate3d(0px, 100%, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0%, 0px);
+    }
+}
+
+@keyframes fade-in-txt {
+    0% {
+        transform: translate3d(0px, 200%, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0%, 0px);
+    }
+}
+
+@keyframes fade-out-cover {
+    0% {
+        transform: translate3d(0%, 0%, 0px);
+        // width: 0%;
+    }
+
+    100% {
+        // width: 100%;
+        transform: translate3d(-100%, 0%, 0px);
     }
 }
