@@ -11,7 +11,7 @@ import project4 from '../../assets/project4.png';
 export default function Work() {
 
     const [ref, inView] = useInView({
-        threshold: 0.1,
+        threshold: 1,
         // triggerOnce: true,
     })
 
@@ -43,14 +43,35 @@ export default function Work() {
                             <span className='img-cover'></span>
                         )}
                 </div>
-                {/* <a className='label'>
-                    <span className='label-data'>
-                        January 2019 <br />
-                    </span>
-                    <span className='label-heading'>
-                        <span>project name</span>
-                    </span>
-                </a> */}
+                <a ref={ref} className='label'>
+                    {inView ? (
+                        <span>
+                            <span className='label-data-l1'>
+                                January 2019 <br />
+                            </span>
+                        </span>
+                    ) : (
+                            <span>
+                                <span className='label-data'>
+                                    January 2019 <br />
+                                </span>
+                            </span>
+
+                        )}
+                    {inView ? (
+                        <span>
+                            <span className='label-heading-l1'>
+                                project name
+                            </span>
+                        </span>
+                    ) : (
+                        <span>
+                            <span className='label-heading'>
+                                <span>project name</span>
+                            </span>
+                        </span>
+                        )}
+                </a>
             </div>
         </div>
     )
