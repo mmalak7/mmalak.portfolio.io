@@ -1,5 +1,5 @@
 .contact{
-    margin-top: 6em;
+    margin-top: 2em;
     width: 100vw;
     height: auto;
 
@@ -14,7 +14,8 @@
         line-height: 1.7;
 
         .contact-cities {
-            margin-bottom: 4em;
+            margin-bottom: 1em;
+            margin-top: 1em;
 
             h3 {
                 font-size: 4.5vh;
@@ -22,7 +23,7 @@
             }
 
             h4{
-                margin-bottom: 3.5em;
+                margin-bottom: 1em;
             }
 
             p{
@@ -38,13 +39,12 @@
         }
 
         h1 {
-            font-size: 6.5vh;
-            margin-bottom: 1.7em;
+            font-size: 10vh;
         }
 
         .buttons-wrapper{
             
-            margin-bottom: 10em;
+            margin-bottom: 4em;
 
             .contact-social-buttons{
                 display: flex;
