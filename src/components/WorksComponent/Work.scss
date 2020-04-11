@@ -44,17 +44,18 @@
     .project-container {
         position: relative;
         width: 100%;
-        height: 43vh;
+        height: 33vh;
         margin: 6vh 0;
         text-align: center;
-        overflow: hidden;
 
         .img-wrap {
             position: absolute;
+            display: inline-block;
             width: 80vw;
             height: 20vh;
             left: 50%;
             transform: translateX(-50%);
+
 
             .img-cover {
                 display: block;
@@ -70,7 +71,7 @@
                 width: 100%;
                 height: 100%;
                 background-color: white;
-                animation: fade-out-cover 1.2s ease-in-out forwards;
+                animation: fade-out-cover 1.2s .5s ease-in-out forwards;
             }
 
             img {
@@ -80,6 +81,32 @@
                 width: 80vw;
                 max-height: 20vh;
                 filter: grayscale(100%);
+            }
+        }
+
+        .label-line{
+            opacity: 0;
+
+            &:after{
+                content: '';
+                position: absolute;
+                width: 1px;
+                background-color: #D1D1D1;
+                height: 0vh;
+                top: calc(90% + 3vh);
+            }
+        }
+
+        .label-line-l1{
+            opacity: 1;
+            
+            &:after{
+                content: '';
+                position: absolute;
+                width: 1px;
+                background-color: #D1D1D1;
+                top: calc(90% + 3vh);
+                -webkit-animation: fade-in-line 1s 1.4s ease-in-out forwards;
             }
         }
 
@@ -104,10 +131,10 @@
                 font-size: 4vw;
                 display: block;
                 opacity: 1;
-                -webkit-animation: fade-in-txt-up-down 1.7s ease-in-out;
+                -webkit-animation: fade-in-txt-up-down 2s ease-in-out;
             }
 
-            .label-heading{
+            .label-heading {
                 opacity: 0;
             }
 
@@ -116,7 +143,7 @@
                 padding-top: 2vw;
                 display: block;
                 opacity: 1;
-                -webkit-animation: fade-in-txt 1.35s ease-in-out;
+                -webkit-animation: fade-in-txt 1.85s ease-in-out;
             }
         }
     }
@@ -125,11 +152,11 @@
 
 @keyframes fade-in-line {
     0% {
-        height: 0px;
+        height: 0vh;
     }
 
     100% {
-        height: 46px;
+        height: 7vh;
     }
 }
 
