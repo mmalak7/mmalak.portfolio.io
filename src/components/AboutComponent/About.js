@@ -1,7 +1,5 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
-import '../AboutComponent/About.scss'
-
 
 export default function About() {
 

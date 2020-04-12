@@ -1,6 +1,5 @@
 import React from 'react'
 import chess from '../../assets/chess_tower.png';
-import '../NavComponent/NavMenu.scss'
 
 export default function NavMenu() {
     return (

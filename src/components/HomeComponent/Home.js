@@ -1,5 +1,4 @@
 import React from 'react'
-import '../HomeComponent/Home.scss'
 import MagicMouse from '../../assets/magic-mouse.svg'
 
 export default function Home() {

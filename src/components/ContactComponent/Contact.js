@@ -1,5 +1,4 @@
 import React from 'react'
-import '../ContactComponent/Contact.scss'
 import chess from '../../assets/chess_tower.png';
 import location from '../../assets/placeholder.png';
 
