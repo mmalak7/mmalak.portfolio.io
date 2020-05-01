@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className='home'>
             <h1>
-                <span className='a-0-h1'>
+                <span className='a-0-h1 top'>
                     Less is
                 </span>
             </h1>

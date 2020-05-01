@@ -16,14 +16,29 @@
             padding-top: 50px;
             -webkit-animation: fade-in-img 0.9s ease-in-out;
         }
+
+        @include for-tablet-portrait-up {
+            padding-left: 120px;
+            padding-top: 90px;
+            -webkit-animation: fade-in-img 0.9s ease-in-out;
+        }
     }
 
     .topic {
 
         @include for-phone-only {
             padding-right: 50px;
-            height: 100%;
             padding-top: 50px;
+            height: 100%;
+            text-align: right;
+            letter-spacing: normal;
+            overflow: hidden;
+        }
+
+        @include for-tablet-portrait-up {
+            padding-right: 120px;
+            padding-top: 90px;
+            height: 100%;
             text-align: right;
             letter-spacing: normal;
             overflow: hidden;
@@ -39,6 +54,13 @@
                 -webkit-animation: fade-in-txt 1.1s ease-in-out;
             }
 
+            @include for-tablet-portrait-up {
+                margin: 0;
+                color: #2E2E2E;
+                font-size: 6.25vw;
+                font-family: 'Raleway', sans-serif;
+                -webkit-animation: fade-in-txt 1.1s ease-in-out;
+            }
         }
 
         h3 {
@@ -51,7 +73,15 @@
                 color: #707070;
                 -webkit-animation: fade-in-txt 1.2s ease-in-out;
             }
-
+            
+            @include for-tablet-portrait-up {
+                font-family: 'Raleway',
+                    sans-serif;
+                margin: 0;
+                font-size: 25px;
+                color: #707070;
+                -webkit-animation: fade-in-txt 1.2s ease-in-out;
+            }
 
         }
     }
@@ -61,6 +91,11 @@
         @include for-phone-only {
             width: 60px;
             height: 102px;
+        }
+
+        @include for-tablet-portrait-up {
+            width: 100px;
+            height: 142px;
         }
     }
 }
