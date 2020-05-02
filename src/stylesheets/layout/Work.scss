@@ -7,13 +7,26 @@
     -webkit-box-align: center;
 
     .main-label-name {
-        font-size: 3.2vh;
-        line-height: 15vw;
-        font-family: 'Raleway', sans-serif;
-        color: #2E2E2E;
-        padding-left: 5vh;
-        padding-top: 6vh;
-        overflow: hidden;
+
+        @include for-phone-only {
+            font-size: 3.2vh;
+            line-height: 15vw;
+            font-family: 'Raleway', sans-serif;
+            color: #2E2E2E;
+            padding-left: 5vh;
+            padding-top: 6vh;
+            overflow: hidden;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 4.2vh;
+            line-height: 12vw;
+            font-family: 'Raleway', sans-serif;
+            color: #2E2E2E;
+            padding-left: 80px;
+            padding-top: 6vh;
+            overflow: hidden;
+        }
+
 
         h1 {
             overflow: hidden;
@@ -28,96 +41,183 @@
         }
 
         .a-1-h1 {
-            display: block;
-            opacity: 1;
-            -webkit-animation: fade-in-txt 1s ease-in-out;
+                display: block;
+                opacity: 1;
+                -webkit-animation: fade-in-txt 1s ease-in-out;
         }
 
         .a-2-h1 {
-            display: block;
-            opacity: 1;
-            -webkit-animation: fade-in-txt 1.05s ease-in-out;
+                display: block;
+                opacity: 1;
+                -webkit-animation: fade-in-txt 1.05s ease-in-out;
         }
 
     }
 
     .project-container {
-        position: relative;
-        width: 100%;
-        height: 33vh;
-        margin: 6vh 0;
-        text-align: center;
+        @include for-phone-only {
+            position: relative;
+            width: 100%;
+            height: 33vh;
+            margin: 6vh 0;
+            text-align: center;
+        }
+
+        @include for-tablet-portrait-up {
+            position: relative;
+            width: 100%;
+            height: 33vh;
+            margin: 6vh 0;
+            text-align: center;
+        }
 
         .img-wrap {
-            position: absolute;
-            display: inline-block;
-            width: 80vw;
-            height: 20vh;
-            left: 50%;
-            transform: translateX(-50%);
+            @include for-phone-only {
+                position: absolute;
+                display: inline-block;
+                width: 80vw;
+                height: 20vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @include for-tablet-portrait-up {
+                position: absolute;
+                display: inline-block;
+                width: 78vw;
+                height: 20vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
 
 
             .img-cover {
-                display: block;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-color: white;
+                @include for-phone-only {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: white;
+                }
+                @include for-tablet-portrait-up {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: white;
+                }
+
             }
 
             .w-1-img-cover {
-                position: absolute;
-                display: block;
-                width: 100%;
-                height: 100%;
-                background-color: white;
-                animation: fade-out-cover 1.2s .5s ease-in-out forwards;
+                @include for-phone-only {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    animation: fade-out-cover 1.2s .5s ease-in-out forwards;
+                }
+
+                @include for-tablet-portrait-up {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    animation: fade-out-cover 1.2s .5s ease-in-out forwards;
+                }
+
             }
 
             img {
-                position: absolute;
-                display: block;
-                // margin: 0 auto;
-                width: 80vw;
-                max-height: 20vh;
-                filter: grayscale(100%);
+                @include for-phone-only {
+                    position: absolute;
+                    display: block;
+                    width: 80vw;
+                    max-height: 20vh;
+                    filter: grayscale(100%);
+                }
+                @include for-tablet-portrait-up {
+                    position: absolute;
+                    display: block;
+                    width: 78vw;
+                    max-height: 20vh;
+                    filter: grayscale(100%);
+                }
+
             }
         }
 
-        .label-line{
+        .label-line {
             opacity: 0;
 
-            &:after{
-                content: '';
-                position: absolute;
-                width: 1px;
-                background-color: #D1D1D1;
-                height: 0vh;
-                top: calc(90% + 3vh);
+            &:after {
+                @include for-phone-only {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    background-color: #D1D1D1;
+                    height: 0vh;
+                    top: calc(90% + 3vh);
+                }
+                @include for-tablet-portrait-up {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    background-color: #D1D1D1;
+                    height: 0vh;
+                    top: calc(90% + 3vh);
+                }
+
             }
         }
 
-        .label-line-l1{
+        .label-line-l1 {
             opacity: 1;
-            
-            &:after{
-                content: '';
-                position: absolute;
-                width: 1px;
-                background-color: #D1D1D1;
-                top: calc(90% + 3vh);
-                -webkit-animation: fade-in-line 1s 1.4s ease-in-out forwards;
+
+            &:after {
+                @include for-phone-only {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    background-color: #D1D1D1;
+                    top: calc(90% + 3vh);
+                    -webkit-animation: fade-in-line 1s 1.4s ease-in-out forwards;
+                }
+                @include for-tablet-portrait-up {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    background-color: #D1D1D1;
+                    top: calc(90% + 5.5vh);
+                    -webkit-animation: fade-in-line 1s 1.4s ease-in-out forwards;
+                }
+
             }
         }
 
         .label {
-            top: 22vh;
-            position: absolute;
-            display: block;
-            width: 100%;
-            font-family: 'Raleway', sans-serif;
-            color: #2E2E2E;
-            overflow: hidden;
+            @include for-phone-only {
+                top: 22vh;
+                position: absolute;
+                display: block;
+                width: 100%;
+                font-family: 'Raleway', sans-serif;
+                color: #2E2E2E;
+                overflow: hidden;
+            }
+            @include for-tablet-portrait-up {
+                top: 22vh;
+                position: absolute;
+                display: block;
+                width: 100%;
+                font-family: 'Raleway', sans-serif;
+                color: #2E2E2E;
+                overflow: hidden;
+            }
+
 
             .span {
                 overflow: hidden;
@@ -128,10 +228,19 @@
             }
 
             .label-data-l1 {
-                font-size: 4vw;
-                display: block;
-                opacity: 1;
-                -webkit-animation: fade-in-txt-up-down 2s ease-in-out;
+                @include for-phone-only {
+                    font-size: 4vw;
+                    display: block;
+                    opacity: 1;
+                    -webkit-animation: fade-in-txt-up-down 2s ease-in-out;
+                }
+                @include for-tablet-portrait-up {
+                    font-size: 4vw;
+                    display: block;
+                    opacity: 1;
+                    -webkit-animation: fade-in-txt-up-down 2s ease-in-out;
+                }
+
             }
 
             .label-heading {
@@ -139,11 +248,20 @@
             }
 
             .label-heading-l1 {
-                font-size: 8vw;
-                padding-top: 2vw;
-                display: block;
-                opacity: 1;
-                -webkit-animation: fade-in-txt 1.85s ease-in-out;
+                @include for-phone-only {
+                    font-size: 8vw;
+                    padding-top: 2vw;
+                    display: block;
+                    opacity: 1;
+                    -webkit-animation: fade-in-txt 1.85s ease-in-out;
+                }
+                @include for-tablet-portrait-up {
+                    font-size: 8vw;
+                    padding-top: 2vw;
+                    display: block;
+                    opacity: 1;
+                    -webkit-animation: fade-in-txt 1.85s ease-in-out;
+                }
             }
         }
     }
