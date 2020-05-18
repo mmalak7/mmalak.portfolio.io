@@ -1,0 +1,60 @@
+.work-page {
+    position: relative;
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .project1 {
+            position: relative;
+            margin: 100px;
+            transform: translateY(-70px);
+
+            @include media('>=1440px', '<1600px') {
+                position: relative;
+                margin: 200px;
+                transform: translateY(-70px);
+            }
+
+            @include media('>=1600px', '<1920px') {
+                position: relative;
+                margin: 300px;
+                transform: translateY(-70px);
+            }
+
+            @include media('>=1920px') {
+                position: relative;
+                margin: 400px;
+                transform: translateY(-70px);
+            }
+        }
+
+        .project2 {
+            margin: 100px;
+            position: relative;
+            transform: translateY(70px);
+
+            @include media('>=1440px', '<1600px') {
+                margin: 200px;
+                position: relative;
+                transform: translateY(70px);
+            }
+
+            @include media('>=1600px', '<1920px') {
+                margin: 300px;
+                position: relative;
+                transform: translateY(70px);
+            }
+
+            @include media('>=1920px') {
+                margin: 400px;
+                position: relative;
+                transform: translateY(70px);
+            }
+        }
+    }
+}
