@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import 'src/stylesheets/abstracts/mixins';
-@import '../abstracts/breakpoints.scss';
+@import '../../abstracts/breakpoints.scss';
 
 .header {
     position: absolute;

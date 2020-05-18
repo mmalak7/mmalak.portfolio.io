@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import '../abstracts/breakpoints.scss';
+@import '../../abstracts/breakpoints.scss';
 
 .header-page {
     position: absolute;
@@ -14,6 +14,8 @@
     align-items: center;
     justify-content: space-between;
 
+    @include media('>1440px') {}
+
     .menu-button {
         width: auto;
         text-align: left;
@@ -26,6 +28,8 @@
         border: none;
         background: none;
         text-decoration: none;
+
+        @include media('>1440px') {}
     }
 
     .topic-page {
@@ -34,6 +38,9 @@
         letter-spacing: 1.8px;
         margin-right: 120px;
         font-family: 'Raleway', sans-serif;
+
+        @include media('>1440px') {}
+
 
         h1 {
             font-size: 2vw;

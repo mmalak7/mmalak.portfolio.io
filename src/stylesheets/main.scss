@@ -1,15 +1,15 @@
 @import 'src/index.scss';
 
-@import 'layout/NavMenu.scss';
-@import 'layout/Home.scss';
-@import 'layout/Work.scss';
-@import 'layout/About.scss';
-@import 'layout/Contact.scss';
+@import 'layout/mobile/NavMenu.scss';
+@import 'layout/mobile/Home.scss';
+@import 'layout/mobile/Work.scss';
+@import 'layout/mobile/About.scss';
+@import 'layout/mobile/Contact.scss';
 
-@import 'layout/NavMenuHighRes.scss';
-// @import 'layout/Home.scss';
-// @import 'layout/Work.scss';
-// @import 'layout/About.scss';
-// @import 'layout/Contact.scss';
+@import 'layout/laptop/NavMenuHighRes.scss';
+// @import 'layout/laptop/HomeHighRes.scss';
+// @import 'layout/laptop/WorkHighRes.scss';
+// @import 'layout/laptop/AboutHighRes.scss';
+// @import 'layout/laptop/ContactHighRes.scss';
 
 @import 'abstracts/animations.scss'
