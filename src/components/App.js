@@ -30,8 +30,8 @@ export default class App extends Component {
 
         const screenWidth = window.innerWidth;
         const screenHeight = window.innerHeight;
-        // console.log(screenWidth)
-        // console.log(screenHeight)
+        console.log(screenWidth)
+        console.log(screenHeight)
 
         if (screenWidth < 1024) {
             return (
@@ -47,11 +47,12 @@ export default class App extends Component {
             return (
                 <>
                     <NavHighResolution />
+                    <div className="back-container"></div>
                     <div className='dev-landing-page'>
                         {routes.map(({ name, path, Component }) => (
                             <Route key={name} path={path} exact>
                                 <div className="page">
-                                    {/* <Component /> */}
+                                    <Component />
                                 </div>
                             </Route>
                         ))}

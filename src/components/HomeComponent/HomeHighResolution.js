@@ -5,7 +5,9 @@ const HomeHighResolution = () => {
     return (
         <div className="home-page">
             <div className="container">
-                <img src={Pavilon} alt="" />
+                <div className='pavilon-photo'>
+                    <img src={Pavilon} alt="" />
+                </div>
                 <div className="quote-home">
                     <h1>Less is</h1>
                     <h1>more</h1>
