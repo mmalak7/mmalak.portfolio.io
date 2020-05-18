@@ -3,9 +3,14 @@ $higlight-text-color: #DA8950;
 $standard-text-color: #2E2E2E;
 
 .about {
-    margin-top: 3em;
-    width: 100vw;
+    margin: 0 20px;
     height: auto;
+
+    @include media('>tablet', '<=desktop') {}
+
+    @include media('>desktop', '<=1440px') {}
+
+    @include media('>1440px') {}
 
     .bio-element-wrapper {
         width: 80vw;
@@ -14,7 +19,12 @@ $standard-text-color: #2E2E2E;
         color: #2E2E2E;
         margin-bottom: 0.3em;
         line-height: 1.7;
-        overflow: hidden;
+    
+        @include media('>tablet', '<=desktop') {}
+    
+        @include media('>desktop', '<=1440px') {}
+    
+        @include media('>1440px') {}
 
         .bio-element-description {
             margin-top: 1em;
@@ -26,19 +36,10 @@ $standard-text-color: #2E2E2E;
                 color: $higlight-text-color;
             }
 
-            .a-2{
-                opacity: 0;
-            }
-
             .a-2-span{
                 font-size: 2.8vh;
                 display: block;
                 opacity: 1;
-                -webkit-animation: fade-in-txt-left 2s ease-in-out;
-            }
-
-            .a-2-d{
-                overflow: hidden;
             }
         }
 
@@ -48,35 +49,6 @@ $standard-text-color: #2E2E2E;
 
         h2 {
             font-size: 3.5vh;
-        }
-
-        .bio-element {
-
-            overflow: hidden;
-
-            h1 {
-                overflow: hidden;
-            }
-
-            .a1 {
-                opacity: 0;
-            }
-
-            .a2 {
-                opacity: 0;
-            }
-
-            .a-1-h1 {
-                display: block;
-                opacity: 1;
-                -webkit-animation: fade-in-txt 1.3s ease-in-out;
-            }
-
-            .a-2-h1 {
-                display: block;
-                opacity: 1;
-                -webkit-animation: fade-in-txt 1.35s ease-in-out;
-            }
         }
     }
 }

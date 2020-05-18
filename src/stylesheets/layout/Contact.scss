@@ -3,6 +3,12 @@
     width: 100vw;
     height: auto;
 
+    @include media('>tablet', '<=desktop') {}
+    
+    @include media('>desktop', '<=1440px') {}
+
+    @include media('>1440px') {}
+
     .contact-wrapper {
         width: 80vw;
         display: flex;

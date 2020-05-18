@@ -1,134 +1,168 @@
+@import '../abstracts/breakpoints.scss';
+
 .home {
 
-    @include for-phone-only {
-        display: flex;
-        flex-direction: column;
+
+    @include media('<=phone') {
         width: 100vw;
-        line-height: 70px;
-        min-height: 80vh;
-        height: 80vh;
+        min-height: 100vh;
+        position: relative;
+        height: 100vh;
         overflow: hidden;
     }
 
-    
-    @include for-tablet-portrait-up {
-        display: flex;
-        flex-direction: column;
+    @include media('>phone', '<=425px') {
         width: 100vw;
-        line-height: 70px;
-        min-height: 80vh;
-        height: 80vh;
+        min-height: 100vh;
+        position: relative;
+        height: 100vh;
         overflow: hidden;
     }
 
-    h1 {
-
-        @include for-phone-only {
-            text-align: center;
-            font-family: 'Raleway', sans-serif;
-            font-weight: lighter;
-            color: #2E2E2E;
-            font-size: 10vh;
-            overflow: hidden;
-        }
-
-        @include for-tablet-portrait-up {
-            text-align: center;
-            font-family: 'Raleway', sans-serif;
-            font-weight: lighter;
-            color: #2E2E2E;
-            font-size: 14vh;
-            overflow: hidden;
-            margin: 0 auto;
-        }
+    @include media('>425px', '<=tablet') {
+        width: 100vw;
+        min-height: 100vh;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
     }
 
-    h4 {
+    @include media('>tablet', '<=desktop') {}
 
-        @include for-phone-only {
-            font-family: 'Raleway', sans-serif;
-            font-weight: lighter;
-            margin: 0;
-            text-align: center;
-            color: #2E2E2E;
-            font-size: 2.5vh;
-            overflow: hidden;
-        }
+    @include media('>desktop', '<=1440px') {}
 
-        
-        @include for-tablet-portrait-up {
-            font-family: 'Raleway', sans-serif;
-            font-weight: lighter;
-            margin: 0;
-            text-align: center;
-            color: #2E2E2E;
-            font-size: 2.5vh;
-            overflow: hidden;
-        }
+    @include media('>1440px') {}
 
-    }
+    .quote {
 
-    .a-0-h1 {
-
-        @include for-phone-only {
-            display: block;
-            -webkit-animation: fade-in-txt 1.4s ease-in-out;
-        }
-
-        
-        @include for-tablet-portrait-up {
-            vertical-align: middle;
-            line-height: normal;
-            display: block;
-            -webkit-animation: fade-in-txt 1.4s ease-in-out;
-        }
-
-    }
-
-    .top{
-        @include for-phone-only {
-            padding-top: 100px;
-        }
-        @include for-tablet-portrait-up {
-            padding-top: 100px;
-        }
-    }
-
-    .a-0-h3 {
-
-        @include for-phone-only {
-            display: block;
-            -webkit-animation: fade-in-txt 1.8s ease-in-out;
-        }
-
-        
-        @include for-tablet-portrait-up {
-            vertical-align: middle;
-            line-height: normal;
+        @include media('<=phone') {
+            position: absolute;
+            width: 100%;
             display: inline-block;
-            -webkit-animation: fade-in-txt 1.8s ease-in-out;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            h1 {
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                font-weight: lighter;
+                color: #2E2E2E;
+                font-size: 3.5rem;
+                overflow: hidden;
+            }
+
+            h4 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: lighter;
+                margin: 0;
+                text-align: center;
+                color: #2E2E2E;
+                font-size: 1rem;
+                overflow: hidden;
+            }
         }
 
+        @include media('>phone', '<=425px') {
+            position: absolute;
+            width: 100%;
+            display: inline-block;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            h1 {
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                font-weight: lighter;
+                color: #2E2E2E;
+                font-size: 3.5rem;
+                overflow: hidden;
+            }
+
+            h4 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: lighter;
+                margin: 0;
+                text-align: center;
+                color: #2E2E2E;
+                font-size: 1rem;
+                overflow: hidden;
+            }
+        }
+
+        @include media('>425px', '<=tablet') {
+            position: absolute;
+            width: 100%;
+            display: inline-block;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            h1 {
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                font-weight: lighter;
+                color: #2E2E2E;
+                font-size: 8.5rem;
+                overflow: hidden;
+            }
+
+            h4 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: lighter;
+                margin: 0;
+                text-align: center;
+                color: #2E2E2E;
+                font-size: 2rem;
+                overflow: hidden;
+            }
+        }
+
+        @include media('>tablet', '<=desktop') {}
+
+        @include media('>desktop', '<=1440px') {}
+
+        @include media('>1440px') {}
     }
 
     img {
 
-        @include for-phone-only {
-            padding-top: 8rem;
+        @include media('<=phone') {
+            width: 24px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 20px;
             -webkit-animation:
                 fade-in-img 2s ease-in-out,
                 moving 1.8s 2s infinite ease-in-out;
-            transform: translateY(75%);
         }
 
-        
-        @include for-tablet-portrait-up {
-            padding-top: 8rem;
+        @include media('>phone', '<=425px') {
+            width: 24px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 20px;
             -webkit-animation:
                 fade-in-img 2s ease-in-out,
                 moving 1.8s 2s infinite ease-in-out;
-            transform: translateY(75%);
         }
+
+        @include media('>425px', '<=tablet') {
+            width: 36px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 20px;
+            -webkit-animation:
+                fade-in-img 2s ease-in-out,
+                moving 1.8s 2s infinite ease-in-out;
+        }
+
+        @include media('>tablet', '<=desktop') {}
+
+        @include media('>desktop', '<=1440px') {}
+
+        @include media('>1440px') {}
     }
 
 }

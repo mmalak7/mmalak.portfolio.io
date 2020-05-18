@@ -1,101 +1,139 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import 'src/stylesheets/abstracts/mixins';
+@import '../abstracts/breakpoints.scss';
 
 .header {
+    position: absolute;
     display: flex;
+    z-index: 10;
     top: 0;
     left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 64px;
+    align-items: center;
     justify-content: space-between;
-    overflow: hidden;
+    // overflow: hidden;
+
+    @include media('>425px', '<=tablet') {
+        height: 128px;
+    }
 
     .logo-mobile {
 
-        @include for-phone-only {
-            padding-left: 50px;
-            padding-top: 50px;
-            -webkit-animation: fade-in-img 0.9s ease-in-out;
+        left: 0;
+
+        @include media('<=phone') {
+            width: 48px;
+            margin-left: 20px;
+
+            img {
+                width: 48px;
+                height: 64px;
+            }
         }
 
-        @include for-tablet-portrait-up {
-            padding-left: 120px;
-            padding-top: 90px;
-            -webkit-animation: fade-in-img 0.9s ease-in-out;
+        @include media('>phone', '<=425px') {
+            width: 48px;
+            margin-left: 40px;
+
+            img {
+                width: 48px;
+                height: 64px;
+            }
         }
+
+        @include media('>425px', '<=tablet') {
+            width: 96px;
+            margin-top: 60px;
+            margin-left: 80px;
+
+            img {
+                width: 96px;
+                height: 128px;
+            }
+        }
+
+        @include media('>tablet', '<=desktop') {}
+
+        @include media('>desktop', '<=1440px') {}
+
+        @include media('>1440px') {}
     }
 
     .topic {
 
-        @include for-phone-only {
-            padding-right: 50px;
-            padding-top: 50px;
-            height: 100%;
-            text-align: right;
-            letter-spacing: normal;
-            overflow: hidden;
-        }
+        text-align: right;
 
-        @include for-tablet-portrait-up {
-            padding-right: 120px;
-            padding-top: 90px;
-            height: 100%;
-            text-align: right;
-            letter-spacing: normal;
-            overflow: hidden;
-        }
+        @include media('<=phone') {
+            width: auto;
+            margin-right: 20px;
+            letter-spacing: 1.2px;
 
-        h1 {
-
-            @include for-phone-only {
+            h1 {
                 margin: 0;
                 color: #2E2E2E;
                 font-size: 6.25vw;
                 font-family: 'Raleway', sans-serif;
-                -webkit-animation: fade-in-txt 1.1s ease-in-out;
             }
 
-            @include for-tablet-portrait-up {
+            h3 {
+                font-family: 'Raleway',
+                    sans-serif;
+                margin: 0;
+                font-size: 1rem;
+                color: #707070;
+            }
+        }
+
+        @include media('>phone', '<=425px') {
+            width: auto;
+            margin-right: 40px;
+            letter-spacing: 1.2px;
+
+            h1 {
                 margin: 0;
                 color: #2E2E2E;
                 font-size: 6.25vw;
                 font-family: 'Raleway', sans-serif;
-                -webkit-animation: fade-in-txt 1.1s ease-in-out;
             }
-        }
 
-        h3 {
-
-            @include for-phone-only {
+            h3 {
                 font-family: 'Raleway',
                     sans-serif;
                 margin: 0;
-                font-size: 15px;
+                font-size: 1rem;
                 color: #707070;
-                -webkit-animation: fade-in-txt 1.2s ease-in-out;
             }
-            
-            @include for-tablet-portrait-up {
+        }
+
+        @include media('>425px', '<=tablet') {
+            width: auto;
+            margin-right: 80px;
+            margin-top: 60px;
+            letter-spacing: 1.2px;
+
+            h1 {
+                margin: 0;
+                color: #2E2E2E;
+                font-size: 6.25vw;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            h3 {
                 font-family: 'Raleway',
                     sans-serif;
                 margin: 0;
-                font-size: 25px;
+                font-size: 2rem;
                 color: #707070;
-                -webkit-animation: fade-in-txt 1.2s ease-in-out;
             }
-
-        }
-    }
-
-    img {
-
-        @include for-phone-only {
-            width: 60px;
-            height: 102px;
         }
 
-        @include for-tablet-portrait-up {
-            width: 100px;
-            height: 142px;
-        }
+        @include media('>tablet', '<=desktop') {}
+
+        @include media('>desktop', '<=1440px') {}
+
+        @include media('>1440px') {}
     }
 }

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import '../abstracts/breakpoints.scss';
+
+.header-page {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu-button {
+        width: auto;
+        text-align: left;
+        letter-spacing: 1.8px;
+        margin-left: 120px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2vw;
+        cursor: pointer;
+        //check decoration of button! 
+        border: none;
+        background: none;
+        text-decoration: none;
+    }
+
+    .topic-page {
+        width: auto;
+        text-align: right;
+        letter-spacing: 1.8px;
+        margin-right: 120px;
+        font-family: 'Raleway', sans-serif;
+
+        h1 {
+            font-size: 2vw;
+            color: #2E2E2E;
+        }
+
+        h3 {
+            color: #707070;
+        }
+    }
+}
