@@ -18,8 +18,8 @@ TODO: refactor scss variables and classes ;) - DONE!
 */
 
 const routes = [
-    { path: "/", name: 'Home', Component: HomeHighResolution },
-    { path: "/about", name: 'About', Component: AboutHighResolution },
+    // { path: "/", name: 'Home', Component: HomeHighResolution },
+    { path: "/", name: 'About', Component: AboutHighResolution },
     { path: "/works", name: 'works', Component: WorkHighResolution },
     { path: "/contact", name: 'Contact', Component: ContactHighResolution },
 ]

@@ -1,0 +1,95 @@
+@import '../../abstracts/breakpoints.scss';
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$higlight-text-color: #DA8950;
+
+
+
+.about-page {
+    position: relative;
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .bio-element-description {
+            position: relative;
+            width: 30%;
+            left: 200px;
+            font-size: .95rem;
+            top: 20px;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 1.8px;
+
+            @include media('>=1440px', '<1600px') {
+                width: 40%;
+                left: 250px;
+                font-size: 1.3rem;
+            }
+
+            @include media('>=1600px', '<1920px') {
+                width: 40%;
+                left: 250px;
+                font-size: 1.3rem;
+            }
+
+            @include media('>=1920px') {
+                width: 40%;
+                left: 250px;
+                font-size: 2rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $higlight-text-color;
+            }
+        }
+
+        .owner-photo {
+            position: relative;
+            width: 330px;
+            height: 100%;
+            right: 17%;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                position: absolute;
+                top: 18%;
+            }   
+
+            @include media('>=1440px', '<1600px') {
+                right: 15%;
+
+                img {
+                    top: 15%;
+                }
+            }
+
+            @include media('>=1600px', '<1920px') {
+                width: 350px;
+                right: 20%;
+
+                img {
+                    top: 10%;
+                }
+            }
+
+            @include media('>=1920px') {
+                width: 500px;
+                right: 18%;
+
+                img {
+                    top: 12%;
+                }
+            }
+
+
+        }
+    }
+}
