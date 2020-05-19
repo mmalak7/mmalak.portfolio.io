@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import '../../abstracts/breakpoints.scss';
+
+.hamburger-menu {
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+
+    .back-color {
+        background-color: #2E2E2E;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .menu-layer {
+        position: relative;
+        background-color: #d0d0d0;
+        height: 100%;
+        overflow: hidden;
+
+        .menu-links {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            nav {
+                display: block;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        text-align: center;
+                        list-style: none;
+                        position: relative;
+                        font-size: 5vw;
+                        letter-spacing: 3px;
+                        font-weight: 400;
+                        overflow: hidden;
+                        cursor: pointer;
+
+
+                        @include media('>=1440px', '<=1600px') {
+                            margin: 30px;
+                        }
+
+                        @include media('>=1600px', '<1920px') {
+                            margin: 50px;
+                        }
+
+                        @include media('>=1920px') {
+                            margin: 50px;
+                        }
+
+                        a {
+                            color: #707070;
+                            overflow: hidden;
+                            text-decoration: none;
+                            &:hover{
+                                color: #2E2E2E;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
