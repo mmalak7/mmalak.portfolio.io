@@ -22,13 +22,13 @@
 
             @include media('>=1600px', '<1920px') {
                 position: relative;
-                margin: 300px;
+                margin: 0 300px;
                 transform: translateY(-70px);
             }
 
             @include media('>=1920px') {
                 position: relative;
-                margin: 400px;
+                margin: 0 400px;
                 transform: translateY(-70px);
             }
         }
@@ -45,13 +45,13 @@
             }
 
             @include media('>=1600px', '<1920px') {
-                margin: 300px;
+                margin: 0 300px;
                 position: relative;
                 transform: translateY(70px);
             }
 
             @include media('>=1920px') {
-                margin: 400px;
+                margin: 0 400px;
                 position: relative;
                 transform: translateY(70px);
             }

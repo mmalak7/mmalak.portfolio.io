@@ -39,9 +39,9 @@ $higlight-text-color: #DA8950;
             }
 
             @include media('>=1920px') {
-                width: 40%;
-                left: 250px;
-                font-size: 2rem;
+                width: 45%;
+                left: 230px;
+                font-size: 1.9rem;
             }
 
             a {
@@ -81,11 +81,11 @@ $higlight-text-color: #DA8950;
             }
 
             @include media('>=1920px') {
-                width: 500px;
+                width: 460px;
                 right: 18%;
 
                 img {
-                    top: 12%;
+                    top: 8%;
                 }
             }
 
