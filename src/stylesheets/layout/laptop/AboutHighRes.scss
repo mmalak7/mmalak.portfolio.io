@@ -61,7 +61,7 @@ $higlight-text-color: #DA8950;
                 height: auto;
                 position: absolute;
                 top: 18%;
-            }   
+            }
 
             @include media('>=1440px', '<1600px') {
                 right: 15%;
@@ -92,4 +92,11 @@ $higlight-text-color: #DA8950;
 
         }
     }
+}
+
+.a-2-span {
+    // height: 150px;
+    position: relative;
+    // overflow: hidden;
+    opacity: 0;
 }
