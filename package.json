@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mmalak7/mmalak.portfolio.io#readme",
   "dependencies": {
+    "circular-std": "^1.0.4",
     "file-loader": "^6.0.0",
     "gsap": "^3.2.6",
     "react": "^16.13.1",

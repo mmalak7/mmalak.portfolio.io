@@ -11,49 +11,233 @@
 
         .project1 {
             position: relative;
-            margin: 100px;
-            transform: translateY(-70px);
+            display: flex;
+            align-items: center;
+            width: 350px;
+            height: 100%;
+            margin: 50px;
+
+
+
+            @include media('<1440px') {
+                position: relative;
+                margin: 0 200px;
+
+                img {
+                    position: absolute;
+                    width: 150px;
+                    opacity: 0;
+                    height: 500px;
+                    z-index: -1;
+                    left: 0;
+                    transform: translateY(-50px);
+                    overflow: hidden;
+                }
+
+                a {
+                    transform: translate(-50%, -70px);
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
 
             @include media('>=1440px', '<1600px') {
                 position: relative;
-                margin: 200px;
-                transform: translateY(-70px);
+                margin: 0 200px;
+
+                img {
+                    position: absolute;
+                    width: 150px;
+                    opacity: 0;
+                    height: 600px;
+                    z-index: -1;
+                    left: 0;
+                    transform: translateY(-20px);
+                    overflow: hidden;
+                }
+
+                a {
+                    transform: translate(-50%, -70px);
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
 
             @include media('>=1600px', '<1920px') {
                 position: relative;
                 margin: 0 300px;
-                transform: translateY(-70px);
+
+                img {
+                    position: absolute;
+                    width: 250px;
+                    opacity: 0;
+                    height: 650px;
+                    z-index: -1;
+                    transform: translateY(-30px);
+                    left: 0;
+                    overflow: hidden;
+                }
+
+                a {
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    transform: translateX(-50%);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
 
             @include media('>=1920px') {
                 position: relative;
-                margin: 0 400px;
-                transform: translateY(-70px);
+                margin: 0 300px;
+
+                img {
+                    position: absolute;
+                    width: 300px;
+                    max-width: 300px;
+                    opacity: 0;
+                    height: 850px;
+                    z-index: -1;
+                    transform: translateY(-70px);
+                    left: 0;
+                    overflow: hidden;
+                }
+
+                a {
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    transform: translateX(-50%);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
         }
 
         .project2 {
-            margin: 100px;
             position: relative;
-            transform: translateY(70px);
+            display: flex;
+            align-items: center;
+            width: 350px;
+            height: 100%;
+            margin: 50px;
+
+
+
+            @include media('<1440px') {
+                position: relative;
+                margin: 0 200px;
+
+                img {
+                    position: absolute;
+                    width: 150px;
+                    opacity: 0;
+                    height: 500px;
+                    z-index: -1;
+                    left: 0;
+                    transform: translateY(-50px);
+                    overflow: hidden;
+                }
+
+                a {
+                    transform: translate(-50%, -70px);
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
 
             @include media('>=1440px', '<1600px') {
-                margin: 200px;
                 position: relative;
-                transform: translateY(70px);
+                margin: 0 200px;
+
+                img {
+                    position: absolute;
+                    width: 150px;
+                    opacity: 0;
+                    height: 600px;
+                    z-index: -1;
+                    left: 0;
+                    transform: translateY(-20px);
+                    overflow: hidden;
+                }
+
+                a {
+                    transform: translate(-50%, -70px);
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
 
             @include media('>=1600px', '<1920px') {
-                margin: 0 300px;
                 position: relative;
-                transform: translateY(70px);
+                margin: 0 300px;
+
+                img {
+                    position: absolute;
+                    width: 250px;
+                    opacity: 0;
+                    height: 650px;
+                    z-index: -1;
+                    transform: translateY(-30px);
+                    left: 0;
+                    overflow: hidden;
+                }
+
+                a {
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    transform: translateX(-50%);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
 
             @include media('>=1920px') {
-                margin: 0 400px;
                 position: relative;
-                transform: translateY(70px);
+                margin: 0 300px;
+
+                img {
+                    position: absolute;
+                    width: 300px;
+                    max-width: 300px;
+                    opacity: 0;
+                    height: 850px;
+                    z-index: -1;
+                    transform: translateY(-70px);
+                    left: 0;
+                    overflow: hidden;
+                }
+
+                a {
+                    font-size: 2vw;
+                    color: #2E2E2E;
+                    font-family: 'Raleway', sans-serif;
+                    position: relative;
+                    transform: translateX(-50%);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
         }
     }
