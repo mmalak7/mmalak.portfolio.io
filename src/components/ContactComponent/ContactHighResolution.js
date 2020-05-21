@@ -11,21 +11,9 @@ const ContactHighResolution = () => {
     let emailForm = useRef(null);
     let emailCSS = CSSRulePlugin.getRule('.email-form:after');
 
-    let city = useRef(null);
-    let cityCSS = CSSRulePlugin.getRule('.city:after');
-
-    let num = useRef(null);
-    let numCSS = CSSRulePlugin.getRule('.num:after');
-
     let socialText = useRef(null);
-    let socialTxtCSS = CSSRulePlugin.getRule('.social-text:after');
-
     let socialIcons = useRef(null);
-    let socialIconsCSS = CSSRulePlugin.getRule('.social-icons:after');
 
-    let photoForm = useRef(null);
-    let image = useRef(null);
-    let imageFormCSS = CSSRulePlugin.getRule('.photo-part-contact:after');
 
     gsap.registerPlugin(CSSRulePlugin, gsap, TimelineLite)
 

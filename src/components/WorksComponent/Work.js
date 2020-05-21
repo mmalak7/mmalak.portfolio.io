@@ -1,9 +1,5 @@
 import React from 'react'
-import { useInView } from 'react-intersection-observer';
 import project1 from '../../assets/project1.png';
-import project2 from '../../assets/project2.png';
-import project3 from '../../assets/project3.png';
-import project4 from '../../assets/project4.png';
 
 // @TODO: Check inline styling options and set the properly for transform3D
 
