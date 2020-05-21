@@ -1,5 +1,5 @@
 import React from 'react'
-import project1 from '../../assets/project1.png';
+import project1 from '../../assets/project2.png';
 
 // @TODO: Check inline styling options and set the properly for transform3D
 
