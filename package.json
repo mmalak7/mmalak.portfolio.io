@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Marcin Malak portfolio website",
+  "homepage" : "https://mmalak7.github.io/mmalak.portfolio.io/",
   "main": "index.js",
   "engines": {
     "node": "12.16.1",
@@ -12,7 +13,8 @@
     "dev": "react-scripts start",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "heroku-postbuild": "npm run build"
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/mmalak7/mmalak.portfolio.io/issues"
   },
-  "homepage": "https://github.com/mmalak7/mmalak.portfolio.io#readme",
   "dependencies": {
     "circular-std": "^1.0.4",
     "file-loader": "^6.0.0",
