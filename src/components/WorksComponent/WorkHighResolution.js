@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Pavilon from '../../assets/pavillon-entrance.jpg'
+import Project1 from '../../assets/Project1.png';
 import gsap from 'gsap';
 
 
@@ -30,8 +30,8 @@ const WorkHighResolution = () => {
         <div className="work-page">
             <div className="container">
                 <div className="project1">
-                    <img ref={el => imgWork = el} src={Pavilon} alt='' />
-                    <a onMouseEnter={handleProject} onMouseOut={handleProjectReturn} href=''>Mega Model Studio</a>
+                    <img ref={el => imgWork = el} src={Project1} alt='' />
+                    <a onMouseEnter={handleProject} onMouseOut={handleProjectReturn} href='https://mystifying-hugle-9ff6c9.netlify.app/'>Mega Model Studio</a>
                 </div>
                 {/* <div className="project2">
                     <img ref={el => imgWork2 = el} src={Pavilon} alt='' />
