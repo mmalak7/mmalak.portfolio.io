@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Marcin Malak portfolio website",
-  "homepage" : "https://mmalak7.github.io/mmalak.portfolio.io/",
+  "homepage": "https://mmalak7.github.io/mmalak.portfolio.io/",
   "main": "index.js",
   "engines": {
     "node": "12.16.1",
-    "npm" : "6.13.4"
+    "npm": "6.13.4"
   },
   "scripts": {
     "dev": "react-scripts start",
@@ -28,6 +28,7 @@
   "dependencies": {
     "circular-std": "^1.0.4",
     "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "gsap": "^3.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -42,11 +43,11 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   }
 }
