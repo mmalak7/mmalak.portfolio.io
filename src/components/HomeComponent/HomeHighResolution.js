@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import Pavilon from '../../assets/pavillon-entrance.jpg'
-import '../../stylesheets/layout/laptop/HomeHighRes.scss';
 
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import gsap from 'gsap';
