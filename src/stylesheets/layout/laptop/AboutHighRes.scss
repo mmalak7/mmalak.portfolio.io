@@ -21,7 +21,7 @@ $higlight-text-color: #DA8950;
             position: relative;
             width: 30%;
             left: 200px;
-            font-size: .95rem;
+            font-size: .85rem;
             top: 20px;
             font-family: 'Raleway', sans-serif;
             letter-spacing: 1.8px;
@@ -52,15 +52,15 @@ $higlight-text-color: #DA8950;
 
         .owner-photo {
             position: relative;
-            width: 330px;
+            width: 270px;
             height: 100%;
-            right: 17%;
+            right: 22%;
 
             img {
                 max-width: 100%;
                 height: auto;
                 position: absolute;
-                top: 18%;
+                top: 13%;
             }
 
             @include media('>=1440px', '<1600px') {

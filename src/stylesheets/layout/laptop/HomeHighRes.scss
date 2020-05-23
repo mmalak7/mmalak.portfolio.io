@@ -90,7 +90,7 @@
     overflow: hidden;
 
     @include media('>=desktop', '<1440px') {
-        transform: translate(40px, -100px);
+        transform: translate(20px, -140px);
     }
 
     @include media('>=1440px', '<1600px') {
