@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Project1 from '../../assets/Project1.png';
+import Project1 from '../../assets/Project1.PNG';
 import gsap from 'gsap';
 
 
