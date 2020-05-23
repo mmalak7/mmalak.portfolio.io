@@ -27,6 +27,9 @@
             justify-content: space-between;
             width: 450px;
 
+            @include media('>=desktop', '<1440px') {
+                transform: translateY(-40px);
+            }
 
             .social-text {
                 font-size: 3vw;
