@@ -1,5 +1,5 @@
 import React from 'react'
-import project1 from '../../assets/project2.png';
+import project2 from '../../assets/project2.png';
 
 // @TODO: Check inline styling options and set the properly for transform3D
 
@@ -16,7 +16,7 @@ export default function Work() {
             </div>
             <div className='project-container'>
                 <div className='img-wrap'>
-                    <img id='project-img' src={project1}></img>
+                    <img id='project-img' src={project2}></img>
                 </div>
                 <a className='label'>
                     <span className='label-data-l1'>
