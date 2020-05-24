@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Pavilon from '../../assets/pavillon-entrance.jpg'
+import Pavilon from '../../assets/mmalak2.png';
 import gsap from 'gsap';
 
 const AboutHighResolution = () => {

@@ -55,6 +55,7 @@ $higlight-text-color: #DA8950;
             width: 270px;
             height: 100%;
             right: 22%;
+            filter: grayscale(50%);
 
             img {
                 max-width: 100%;
@@ -64,28 +65,28 @@ $higlight-text-color: #DA8950;
             }
 
             @include media('>=1440px', '<1600px') {
-                right: 15%;
+                right: 20%;
 
                 img {
-                    top: 15%;
+                    top: 25%;
                 }
             }
 
             @include media('>=1600px', '<1920px') {
-                width: 350px;
+                width: 300px;
                 right: 20%;
 
                 img {
-                    top: 10%;
+                    top: 23%;
                 }
             }
 
             @include media('>=1920px') {
                 width: 460px;
-                right: 18%;
+                right: 15%;
 
                 img {
-                    top: 8%;
+                    top: 18%;
                 }
             }
 
