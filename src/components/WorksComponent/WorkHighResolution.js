@@ -6,7 +6,6 @@ import gsap from 'gsap';
 const WorkHighResolution = () => {
 
     let imgWork = useRef(null);
-    let imgWork2 = useRef(null);
 
     const handleProject = () => {
 
