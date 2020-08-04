@@ -43,7 +43,7 @@ const AboutHighResolution = () => {
         <div className="about-page">
             <div className="container">
                 <p ref={el => bioDescription = el} className='bio-element-description'>
-                    <p ref={el => one = el} className="a-2-span">Freshly graduated student from <a href="http://pwr.edu.pl/en/" title="Wroclaw University of Science and Technology" target="_blank">Wroclaw University of Science and Technology</a>,</p>
+                    <p ref={el => one = el} className="a-2-span">Freshly graduated student from <a href="http://pwr.edu.pl/en/" title="Wrocław University of Science and Technology" target="_blank">Wroclaw University of Science and Technology</a>,</p>
                     <p ref={el => two = el} className="a-2-span">partly made in <a href="https://www.uab.cat/en/" title="Universitat Autonoma de Barcelona" target="_blank">Universitat Autonoma de Barcelona</a>.</p>
                     <p ref={el => three = el} className="a-2-span">Last years I had the chance to did an internship at <a href="https://explaineverything.com/" title="Explain Everything" target="_blank">Explain Everything </a>                   </p>
                     <p ref={el => four = el} className="a-2-span">(2018/2019), as Android developer, after that I was working for my university as data scientist (2018). During my master thesis I was cooparating with Ateknea company (2019) to create my master thesis "Forecasting level of air pollution in urban areas".</p>
