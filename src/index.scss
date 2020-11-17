@@ -1,8 +1,10 @@
-@import './stylesheets/abstracts/breakpoints.scss';
+@import "./stylesheets/abstracts/breakpoints.scss";
 
 html,
 body {
     box-sizing: border-box;
+    visibility: hidden;
+    overflow: hidden;
 }
 
 *,
@@ -24,18 +26,18 @@ body {
     left: 50%;
     transform: translate(-50%, -45%);
 
-    @include media('>=desktop', '<1440px') {
+    @include media(">=desktop", "<1440px") {
         width: calc(100vw - 300px);
         height: calc(100vh - 40%);
     }
 
-    @include media('>=1440px', '<=1600px') {
+    @include media(">=1440px", "<=1600px") {
         transform: translate(-52%, -45%);
         width: calc(100vw - 450px);
         height: calc(100vh - 35%);
     }
 
-    @include media('>1600px') {
+    @include media(">1600px") {
         transform: translate(-52%, -45%);
         width: calc(100vw - 450px);
         height: calc(100vh - 30%);

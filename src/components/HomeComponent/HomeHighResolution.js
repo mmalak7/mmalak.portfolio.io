@@ -14,11 +14,12 @@ const HomeHighResolution = () => {
 
     useEffect(() => {
 
+        gsap.to("body", 0, { css: { visibility: "visible" } });
 
         gsap.from(pavilonPhoto, {
             duration: 1.4,
             opacity: 0,
-            y: 30,
+            y: 100,
             ease: "power3.out",
         })
 
