@@ -1,22 +1,24 @@
 import React, { useRef } from "react";
 import workphoto from "../../assets/workPhoto.png";
+import mioStudio from "../../assets/mio-studio.png";
 import gsap from "gsap";
 
 const WorkHighResolution = () => {
   let imgWork = useRef(null);
+  let imgWork2 = useRef(null);
 
-  const handleProject = () => {
-    gsap.from(imgWork, 0.8, {
+  const handleProject = (img) => {
+    gsap.from(img, 0.8, {
       y: 20,
       ease: "power3.easeInOut",
     });
-    gsap.to(imgWork, 0.8, {
+    gsap.to(img, 0.8, {
       opacity: 1,
     });
   };
 
-  const handleProjectReturn = () => {
-    gsap.to(imgWork, {
+  const handleProjectReturn = (img) => {
+    gsap.to(img, {
       opacity: 0,
       ease: "power3.inOut",
     });
@@ -28,23 +30,23 @@ const WorkHighResolution = () => {
         <div className="project1">
           <img ref={(el) => (imgWork = el)} src={workphoto} alt="" />
           <a
-            onMouseEnter={handleProject}
-            onMouseOut={handleProjectReturn}
+            onMouseEnter={() => handleProject(imgWork)}
+            onMouseOut={() => handleProjectReturn(imgWork)}
             href="https://mystifying-hugle-9ff6c9.netlify.app/"
           >
             Mega Model Studio
           </a>
         </div>
-        {/* <div className="project2">
-          <img ref={(el) => (imgWork2 = el)} src={Pavilon} alt="" />
+        <div className="project2">
+          <img ref={(el2) => (imgWork2 = el2)} src={mioStudio} alt="" />
           <a
-            onMouseEnter={handleProject}
-            onMouseOut={handleProjectReturn}
-            href=""
+            onMouseEnter={() => handleProject(imgWork2)}
+            onMouseOut={() => handleProjectReturn(imgWork2)}
+            href="https://practical-curran-260ec1.netlify.app/"
           >
-            Hamborgo catalog
+            MioStudio
           </a>
-        </div> */}
+        </div>
       </div>
     </div>
   );

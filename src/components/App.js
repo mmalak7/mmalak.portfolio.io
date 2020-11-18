@@ -21,8 +21,6 @@ export default class App extends Component {
   render() {
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
-    console.log(screenWidth);
-    console.log(screenHeight);
 
     if (screenWidth < 1024) {
       return (
@@ -37,22 +35,20 @@ export default class App extends Component {
     } else {
       return (
         <Router>
-          <>
-            <NavHighResolution />
-            <div className="back-container"></div>
-            <div className="dev-landing-page">
-              <Switch location={location} key={location.pathname}>
-                <Route exact path={`/`} component={HomeHighResolution} />
-                <Route
-                  exact
-                  path={`/contact`}
-                  component={ContactHighResolution}
-                />
-                <Route exact path={`/about`} component={AboutHighResolution} />
-                <Route exact path={`/works`} component={WorkHighResolution} />
-              </Switch>
-            </div>
-          </>
+          <NavHighResolution />
+          <div className="back-container"></div>
+          <div className="dev-landing-page">
+            <Switch location={location} key={location.pathname}>
+              <Route exact path={`/`} component={HomeHighResolution} />
+              <Route
+                exact
+                path={`/contact`}
+                component={ContactHighResolution}
+              />
+              <Route exact path={`/about`} component={AboutHighResolution} />
+              <Route exact path={`/works`} component={WorkHighResolution} />
+            </Switch>
+          </div>
         </Router>
       );
     }
